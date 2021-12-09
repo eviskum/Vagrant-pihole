@@ -1,0 +1,6 @@
+---
+
+- name: Set up network
+  hosts: all
+  roles:
+    - { role: vagrant-network, net2int_ip: 192.168.200.6, net2int_mask: 255.255.255.240, net2int_gw: 192.168.200.1, dnsip: 192.168.200.5, become: yes }
